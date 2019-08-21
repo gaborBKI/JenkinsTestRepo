@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import static org.junit.Assert.*;
 
-public class Vigil {
+public class VigilTest {
 
     private static WebDriver driver;
 
@@ -16,7 +16,8 @@ public class Vigil {
 
     @Test
     public void indexTest(){
-        assertEquals("Index", driver.getTitle());
+        String title = driver.getTitle();
+        assertEquals("Index", title);
     }
 
     @AfterAll
